@@ -1,0 +1,50 @@
+2021-12-06 02:38:08 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\Admin\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "C:\Users\Admin\Documents\Portable WeighBridge\backend\dist\index.js" --scriptoptions= --log "Portable Weigh Bridge wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-06 02:38:08 - Started 10812
+2021-12-06 02:45:43 - Stopping portableweighbridge.exe
+2021-12-06 02:45:43 - ProcessKill 10812
+2021-12-06 02:45:43 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-06 02:46:09 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\Admin\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "C:\Users\Admin\Documents\Portable WeighBridge\backend\dist\index.js" --scriptoptions= --log "Portable Weigh Bridge wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-06 02:46:09 - Started 6540
+2021-12-06 12:02:07 - Stopping portableweighbridge.exe
+2021-12-06 12:02:07 - ProcessKill 6540
+2021-12-06 12:02:07 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-06 12:02:34 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\Admin\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "C:\Users\Admin\Documents\Portable WeighBridge\backend\dist\index.js" --scriptoptions= --log "Portable Weigh Bridge wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-06 12:02:34 - Started 6076
+2021-12-08 12:50:39 - Stopping portableweighbridge.exe
+2021-12-08 12:50:39 - ProcessKill 6076
+2021-12-08 12:50:39 - Found child process: 6104 Name: conhost.exe
+2021-12-08 12:50:39 - Found child process: 6736 Name: node.exe
+2021-12-08 12:50:39 - Stopping process 6104
+2021-12-08 12:50:39 - Send SIGINT 6104
+2021-12-08 12:50:39 - SIGINT to 6104 failed - Killing as fallback
+2021-12-08 12:50:39 - Stopping process 6736
+2021-12-08 12:50:39 - Send SIGINT 6736
+2021-12-08 12:50:39 - SIGINT to 6736 failed - Killing as fallback
+2021-12-08 12:50:39 - Stopping process 6076
+2021-12-08 12:50:39 - Send SIGINT 6076
+2021-12-08 12:50:39 - SIGINT to 6076 failed - Killing as fallback
+2021-12-08 12:50:39 - Finished portableweighbridge.exe
+2021-12-08 12:50:41 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\Admin\AppData\Roaming\npm\node_modules\node-windows\lib\wrapper.js --file "C:\Users\Admin\Documents\Portable WeighBridge\backend\dist\index.js" --scriptoptions= --log "Portable Weigh Bridge wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-08 12:50:41 - Started 11432

@@ -1,0 +1,46 @@
+App running on: http://localhost:4000
+Executing (default): CREATE TABLE IF NOT EXISTS `tokens` (`id` INTEGER auto_increment , `token` VARCHAR(255) NOT NULL, `is_active` TINYINT(1) DEFAULT true, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `tokens`
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `username` VARCHAR(255) NOT NULL, `name` VARCHAR(255) NOT NULL, `photo` VARCHAR(255), `email` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `password_changed_token` VARCHAR(255), `role` VARCHAR(255) DEFAULT 'operator', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `users`
+Executing (default): CREATE TABLE IF NOT EXISTS `readings` (`id` INTEGER auto_increment , `transporter` VARCHAR(255) NOT NULL, `serial` VARCHAR(255) NOT NULL, `overloaded` TINYINT(1) DEFAULT false, `registration` VARCHAR(255) NOT NULL, `owner` VARCHAR(255) NOT NULL, `user_id` INTEGER NOT NULL, `source` VARCHAR(255) NOT NULL, `destination` VARCHAR(255) NOT NULL, `cargo` VARCHAR(255) NOT NULL, `weights` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `readings`
+Successfully connected to DB
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`username` = 'operator' LIMIT 1;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`id` = 2;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`username` = 'operator' LIMIT 1;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`id` = 2;
+Executing (default): INSERT INTO `readings` (`id`,`transporter`,`serial`,`overloaded`,`registration`,`owner`,`user_id`,`source`,`destination`,`cargo`,`weights`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?);
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+App running on: http://localhost:4000
+Executing (default): CREATE TABLE IF NOT EXISTS `tokens` (`id` INTEGER auto_increment , `token` VARCHAR(255) NOT NULL, `is_active` TINYINT(1) DEFAULT true, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `tokens`
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `username` VARCHAR(255) NOT NULL, `name` VARCHAR(255) NOT NULL, `photo` VARCHAR(255), `email` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `password_changed_token` VARCHAR(255), `role` VARCHAR(255) DEFAULT 'operator', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `users`
+Executing (default): CREATE TABLE IF NOT EXISTS `readings` (`id` INTEGER auto_increment , `transporter` VARCHAR(255) NOT NULL, `serial` VARCHAR(255) NOT NULL, `overloaded` TINYINT(1) DEFAULT false, `registration` VARCHAR(255) NOT NULL, `owner` VARCHAR(255) NOT NULL, `user_id` INTEGER NOT NULL, `source` VARCHAR(255) NOT NULL, `destination` VARCHAR(255) NOT NULL, `cargo` VARCHAR(255) NOT NULL, `weights` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `readings`
+Successfully connected to DB
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+App running on: http://localhost:4000
+Executing (default): CREATE TABLE IF NOT EXISTS `tokens` (`id` INTEGER auto_increment , `token` VARCHAR(255) NOT NULL, `is_active` TINYINT(1) DEFAULT true, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `tokens`
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER auto_increment , `username` VARCHAR(255) NOT NULL, `name` VARCHAR(255) NOT NULL, `photo` VARCHAR(255), `email` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `password_changed_token` VARCHAR(255), `role` VARCHAR(255) DEFAULT 'operator', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `users`
+Executing (default): CREATE TABLE IF NOT EXISTS `readings` (`id` INTEGER auto_increment , `transporter` VARCHAR(255) NOT NULL, `serial` VARCHAR(255) NOT NULL, `overloaded` TINYINT(1) DEFAULT false, `registration` VARCHAR(255) NOT NULL, `owner` VARCHAR(255) NOT NULL, `user_id` INTEGER NOT NULL, `source` VARCHAR(255) NOT NULL, `destination` VARCHAR(255) NOT NULL, `cargo` VARCHAR(255) NOT NULL, `weights` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `readings`
+Successfully connected to DB
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`username` = 'admin' LIMIT 1;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`username` = 'operator' LIMIT 1;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`id` = 2;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`username` = 'operator' LIMIT 1;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`id` = 2;
+Executing (default): SELECT `id`, `transporter`, `serial`, `overloaded`, `registration`, `owner`, `user_id`, `source`, `destination`, `cargo`, `weights`, `createdAt`, `updatedAt` FROM `readings` AS `Reading`;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`username` = 'operator' LIMIT 1;
+Executing (default): SELECT `id`, `username`, `name`, `photo`, `email`, `password`, `password_changed_token`, `role`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`id` = 2;
+Executing (default): INSERT INTO `readings` (`id`,`transporter`,`serial`,`overloaded`,`registration`,`owner`,`user_id`,`source`,`destination`,`cargo`,`weights`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?,?);

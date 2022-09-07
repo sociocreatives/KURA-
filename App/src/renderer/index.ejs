@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KURA | Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://use.fontawesome.com/fcc6f135b2.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>KURA</span></strong>. All Rights Reserved
+      </div>
+    </footer>
+  </body>
+  <script>
+    window.electron.ipcRenderer.once('ipc-example', (arg) => {
+      // eslint-disable-next-line no-console
+      console.log(arg);
+    });
+
+    window.electron.ipcRenderer.myPing();
+  </script>
+</html>

@@ -1,0 +1,49 @@
+.probihition-order {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        // width: 200px !important;
+        &-goke{
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100% !important;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &-serial{
+
+        }
+        &-ministry{}
+    
+        &-office{
+            
+        }
+    }
+
+    &-body{
+        padding-top: 1.2rem;
+        &-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 0.8rem;
+            & > * {
+                font-weight: bold;
+            }
+        }
+        & > p {
+            font-size: 1.7rem;
+        }
+
+
+    }
+   
+}
